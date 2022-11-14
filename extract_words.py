@@ -13,6 +13,7 @@ for wordb in words:
 
 
 with open("filtered_words.txt", 'w')as f:
-    # for w in r:
-    #     f.write(w)
-    f.write(str(r))
+    f.write('[\n')
+    for w in r:
+        f.write('\t"' + w + '",\n')
+    f.write(']')

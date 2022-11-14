@@ -1,7 +1,12 @@
+import React from "react";
+import TextInput from "./TextInput";
 
 function App() {
   return (
-    <p>Hello!</p>
+    <div className="app">
+      <p>Hello!</p>
+      <TextInput />
+    </div>
   );
 }
 
